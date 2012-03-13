@@ -1,0 +1,60 @@
+* cropcal
+
+A collection of code used to download, ingest, and analyze the Crop
+Calendar Dataset from the Center for Sustainability and the Global
+Environment (SAGE) at the University of Wisconsin-Madison.
+
+** Dataset Description
+
+From [[http://www.sage.wisc.edu/download/sacks/crop_calendar.html][the 
+SAGE web site]]:
+
+#+BEGIN_QUOTE 
+
+[The Crop Calendar Dataset] is the result of digitizing and
+georeferencing existing observations of crop planting and harvesting
+dates. We then derived climate statistics (e.g., the average
+temperature at which planting occurs in each region) by merging these
+crop calendar maps with monthly climatologies from CRU.
+
+#+END_QUOTE
+
+The dataset is described in the following publication:
+
+Sacks, W.J., D. Deryng, J.A. Foley, and N. Ramankutty (2010). Crop
+planting dates: an analysis of global patterns. Global Ecology and
+Biogeography 19, 607-620. DOI: 10.1111/j.1466-8238.2010.00551.x
+
+Running 'make' within your working copy will download the above
+publication and an additional README document prepared by the
+dataset's authors along with the data iself.
+
+** Codeset Description
+
+This repository can be found
+[[https://github.com/nbest937/cropcal][here]] on
+[[https://github.com][GitHub]].
+
+Currently this code simply downloads the dataset and its documentation
+through the links provided on the SAGE web site.  Running 'make' will
+download all files and extract all netCDF data files to the 'nc'
+subdirectory.  Individual crops can be specified for extraction,
+e.g. 'make Maize'.  See the Makefile for additional details.
+
+This repository is an example of a Blox component.  Blox is a modular
+source code management, data management and scientific workflow
+concept under development at the University of Chicago's Computation
+Institute.  Blox currently relies on the Git distributed version
+control system, but could conceivably be implemented in other source
+code management systems.
+
+** Copyrights
+
+The dataset is Copyright © 2009 Board of Regents of the University of
+Wisconsin System.
+
+The codeset was conceived by Neil Best at the University of
+Chicago's Computation Institute in support of ongoing research at the
+Center for Robust Decision Making on Climate and Energy Policy
+(RDECEP).    
+
