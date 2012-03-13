@@ -31,9 +31,7 @@ dataset's authors along with the data iself.
 
 ** Codeset Description
 
-This repository can be found
-[[https://github.com/nbest937/cropcal][here]] on
-[[https://github.com][GitHub]].
+This repository can be found [[https://github.com/nbest937/cropcal][here]] on [[https://github.com][GitHub]].
 
 Currently this code simply downloads the dataset and its documentation
 through the links provided on the SAGE web site.  Running 'make' will
@@ -45,8 +43,9 @@ This repository is an example of a Blox component.  Blox is a modular
 source code management, data management and scientific workflow
 concept under development at the University of Chicago's Computation
 Institute.  Blox currently relies on the Git distributed version
-control system, but could conceivably be implemented in other source
-code management systems.
+control system and GNU Make, but could conceivably be implemented
+using other source code management systems and dependency tracking
+utilities.
 
 ** Copyrights
 
