@@ -13,9 +13,9 @@ fill.nc   = $(crops:%=%.crop.calendar.fill.nc)
 gz = $(nc:%=%.gz)
 fill.gz = $(fill.nc:%=%.gz)
 
-all: $(nc) $(fill.nc) doc rename
+all: $(nc) $(fill.nc) doc
 
-$(crops): %: %.crop.calendar.nc %.crop.calendar.fill.nc rename
+$(crops): %: %.crop.calendar.nc %.crop.calendar.fill.nc
 
 $(nc) $(fill.nc): %: %.gz
 	gunzip --force nc/$<
